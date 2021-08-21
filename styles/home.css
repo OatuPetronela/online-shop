@@ -51,7 +51,16 @@ nav a {
 }
 
 nav a:hover {
-    background: chartreuse;
+    background: pink;
     transition: 0.5s;
     text-transform: uppercase;
+}
+
+.search {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -450px;
+    width: 450px;
+    height: 20px;
+    border-radius: 20px;
 }
