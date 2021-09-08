@@ -28,17 +28,33 @@
         <br>
         <!-- product -->
         <div class="product">
-            <h1 class="page-title">Laptop Lenovo IdeaPad Gaming 3 15IMH05 cu procesor Intel Core i5-10300H, 15.6", Full HD, 8GB, 256GB SSD, NVIDIA GeForce GTX 1650 4GB, No OS, Onyx Black</h1>
+            <h1 class="page-title">Laptop Lenovo IdeaPad Gaming 3 15IMH05 cu procesor Intel Core i5-10300H, 15.6", Full HD,<br> 8GB, 256GB SSD, NVIDIA GeForce GTX 1650 4GB, No OS, Onyx Black</h1>
     </nav>
     <div class="small-container">
         <div class="row">
-            <div class="col-4 ml-5">
-                <img src="/images/product.1.png" width="100%" alt="laptopLenovo">
+            <div class="col-3 ml-5">
+                <img src="/images/product.1.png" width="100%" alt="laptopLenovo" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="/images/prod.2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/prod.3.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/prod.4.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/prod.5.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/images/prod.6.png" width="100%" class="small-img">
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div id="cls" class="row mb-5 ml-5">
-            <div class="col-4 m-auto">
+        <div id="cls" class="row">
+            <div class="col-lg-4 m-auto">
                 <button type="submit" class="btn btn-primary" data-offer-id="8420290" data-product-type="main" id="btn">
                     <div id="icon">
                         <i class="fas fa-shopping-cart cart"></i>
@@ -176,7 +192,25 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+        }
+        SmallImg[4].onclick = function() {
+            ProductImg.src = SmallImg[4].src;
+        }
+    </script>
 </body>
 
 </html>
