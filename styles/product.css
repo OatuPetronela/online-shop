@@ -168,6 +168,19 @@ nav a:hover {
     color: #005eb8;
 }
 
+.product-old-price {
+    font-size: 17px;
+    margin-left: -150px;
+    margin-top: -120px;
+}
+
+.product-new-price {
+    font-size: 28px;
+    margin-left: -150px;
+    margin-top: -40px;
+    color: red;
+}
+
 
 /* footer */
 
