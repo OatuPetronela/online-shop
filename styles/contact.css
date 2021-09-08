@@ -62,7 +62,7 @@
                 background-color: white;
                 border: none;
                 width: 60%;
-                padding: 0px;
+                padding: 6px;
                 margin: auto;
                 margin-right: 160px;
                 color: black;
@@ -71,7 +71,7 @@
             .search-btn {
                 float: left;
                 margin-left: 390px;
-                margin-top: -16px;
+                margin-top: -25px;
                 border: none;
                 background: white;
             }
