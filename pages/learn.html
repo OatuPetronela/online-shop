@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -25,10 +26,31 @@
             <h1>Descriere</h1>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
             <h1>Speificatii</h1>
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
     </div>
+
+    <p id="ex">eemple</p>
+    <h1 id="test" onclick="ready()">Acesta sunt eu </h1>
+    <script src="/script/learn.js"></script>
+    <script>
+        function ready() {
+            document.getElementById("test").innerHTML = "Acesta este un efelant";
+        }
+    </script>
+    <script>
+        var productList = [{
+            milk: 3,
+            chees: 2,
+            egg: 10,
+        }, {
+            deo: 2,
+            paper: 1,
+        }];
+        console.log(productList)
+    </script>
 </body>
 
 </html>
