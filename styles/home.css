@@ -5,7 +5,6 @@
     }
     
     footer {
-        position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
@@ -17,4 +16,25 @@
     .logo {
         color: red;
         font-size: 23px;
+    }
+    
+    .btn_carousel {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        height: 90px;
+        width: 320px;
+        border-radius: 6px;
+        border: 2px solid white;
+    }
+    
+    .btn_carousel:hover {
+        background-color: tomato;
+    }
+    
+    .carousel-item .btn_carousel {
+        margin-bottom: 400px;
+        margin-left: 110vh;
+        font-size: 30px;
+        text-align: center;
     }
