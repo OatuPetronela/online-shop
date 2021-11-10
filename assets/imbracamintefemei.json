@@ -1,0 +1,141 @@
+[{
+        "id": 1,
+        "description": "Pulover din casmir, gri",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-wf313_loup_0_mare.jpg",
+        "oldprice": "390,00 lei",
+        "price": "165,00 lei"
+    }, {
+        "id": 2,
+        "description": "Pulover din casmir, negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-wf209_noir_0_mare.jpg",
+        "oldprice": "390,00 lei",
+        "price": "165,00 lei"
+    },
+    {
+        "id": 3,
+        "description": "Pulover din casmir, albastru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-wf313_bleu_roy_0_mare.jpg",
+        "oldprice": "390,00 lei",
+        "price": "165,00 lei"
+    },
+    {
+        "id": 4,
+        "description": "Pulover din casmir si matase, bej",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-asf731-camel_0_mare.jpg",
+        "oldprice": "525,00 lei",
+        "price": "199,00 lei"
+    },
+    {
+        "id": 5,
+        "description": "Pulover din casmir si viscoza, gri",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-asf709-flanelle_0_mare.jpg",
+        "oldprice": "399,00 lei",
+        "price": "165,00 lei"
+    },
+    {
+        "id": 6,
+        "description": "Cardigan din casmir,camel",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-wf719_camel_0_mare.jpg",
+        "oldprice": "459,00 lei",
+        "price": "207,00 lei"
+    },
+    {
+        "id": 7,
+        "description": "Pulover din casmir si viscoza, gri",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-asf325-bordeaux_0_mare.jpg",
+        "oldprice": "399,00 lei",
+        "price": "165,00 lei"
+    },
+    {
+        "id": 8,
+        "description": "Cardigan din casmir,negru ",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-wf719_noir_0_mare.jpg",
+        "oldprice": "459,00 lei",
+        "price": "207,00 lei"
+    },
+
+    {
+        "id": 9,
+        "description": "Jacheta, ivory",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/401/1868/137/305433/sc03_crisstalus_mare.jpg",
+        "oldprice": "594,00 lei",
+        "price": "330,00 lei"
+    }, {
+        "id": 10,
+        "description": "Jacheta, alba",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/sc11-crisstalus_mare.jpg",
+        "oldprice": "301,00 lei",
+        "price": "229,00 lei"
+    },
+    {
+        "id": 11,
+        "description": "Capa Sorana, neagra",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/819/5570/1241485/1241485-6163a78fa0027-1_mare.jpg",
+        "oldprice": "264,00 lei",
+        "price": "107,00 lei"
+    },
+    {
+        "id": 12,
+        "description": "Palton din lana, rosu",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/mas-copa-rouge_0_mare.jpg",
+        "oldprice": "925,00 lei",
+        "price": "359,00 lei"
+    },
+    {
+        "id": 13,
+        "description": "Palton, bej",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/pf28-crisstalus_mare.jpg",
+        "oldprice": "505,00 lei",
+        "price": "385,00 lei"
+    },
+    {
+        "id": 14,
+        "description": "Palton, rosu",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p4/401/1868/86/792169/pf41-crisstalus_mare.jpg",
+        "oldprice": "498,00 lei",
+        "price": "293,00 lei"
+    },
+    {
+        "id": 15,
+        "description": "Palton din stofa, ivory",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/401/1868/86/305369/pf19_crisstalus_19_mare.jpg",
+        "oldprice": "559,00 lei",
+        "price": "367,00 lei"
+    },
+    {
+        "id": 16,
+        "description": "Palton cambrat din lana, rosu",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p4/633/2739/86/908212/15169_0_mare.jpg",
+        "oldprice": "499,00 lei",
+        "price": "297,00 lei"
+    },
+    {
+        "id": 17,
+        "description": "Palton negru cu cordon",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/byu-9398ng_mare.jpg",
+        "oldprice": "759,00 lei",
+        "price": "349,00 lei"
+    },
+    {
+        "id": 18,
+        "description": "Haina de blana cu gluga",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/mici/igv-48-negru_14_mare.jpg",
+        "oldprice": "1209,00 lei",
+        "price": "799,00 lei"
+    },
+    {
+        "id": 19,
+        "description": "Palton, maro",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p4/401/1868/86/792166/pf38-crisstalus_mare.jpg",
+        "oldprice": "903,00 lei",
+        "price": "499,00 lei"
+    },
+    {
+        "id": 20,
+        "description": "Palton, negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p4/401/1868/86/791736/pf30-crisstalus_mare.jpg",
+        "oldprice": "399,00 lei",
+        "price": "179,00 lei"
+    }
+
+]
