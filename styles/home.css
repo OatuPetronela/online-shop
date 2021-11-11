@@ -62,11 +62,3 @@
         bottom: 0;
         right: 0;
     }
-    
-    #image_search {
-        width: 200px;
-        height: 350px;
-        object-fit: cover;
-        margin-left: 335px;
-        border: 1px solid black;
-    }

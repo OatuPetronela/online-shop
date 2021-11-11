@@ -28,9 +28,9 @@ document.getElementById("myNav").innerHTML =
     "<a class='nav-link text-dark' href='/pages/contact.html '>CONTACT</a>" +
     "</li>" +
     "</ul>" +
-    "<form class='d-flex'>" +
+    "<form action='http://127.0.0.1:5500/pages/header.html' class='d-flex'>" +
     "<input class='form-control me-2' type='text' id='search' placeholder='Cauta produsele favorite' aria-label='Search'>" +
-    "<button class='btn btn-outline-light mr-3' type='submit '>Search</button>" +
+    "<button class='btn btn-outline-light mr-3'  type='submit '>Search</button>" +
     "</form>" +
     "</div>" +
     "</nav>";
@@ -62,9 +62,10 @@ document.getElementById("myFooter").innerHTML =
     "</footer>";
 
 const search = document.getElementById('search');
-const matchList = document.getElementById('match-list');
+var matchList = document.getElementById('match-list');
 
 //cauta si filtreaza hainele
+
 
 const searchClothers = async searchText => {
     const res = await fetch('../assets/imbracamintefemei.json');
@@ -77,23 +78,30 @@ const searchClothers = async searchText => {
     });
     if (searchText.length === 0) {
         matches = [];
+    } else {
+        outputHtml(matches)
     }
-    outputHtml(matches);
 };
 const outputHtml = matches => {
+    let row = document.createElement('div');
+    row.className = "row";
     if (matches.length > 0) {
-        const html = matches.map(match =>
-            ` <div class='card mt-2'> 
-    <img src=" ${match.image}" class='card-img-top' id='image_search' alt=''/>
-    <div class='card-body'>
-    <div class='col-sm-6 col-md-4 col-lg-3'>
-    <h5 class='card-title text-center'>${match.description}</h5>
-    <span class='card-text'><s>${match.oldprice} </s></span>
-    <h4 class='card-text'> ${match.price}</h4>
-    <a href='#' class='btn btn-info text-center'>Adauga in cos</a>
-    </div>
-    </div>`).join('');
-        console.log(matchList.innerHTML = html)
+        matches.map(match => {
+            let card = document.createElement("div");
+            card.className = "col-md-2"
+            card.innerHTML = `<div class='card mt-2'> 
+            <img src="${match.image}" class='card-img-top' id='image_search' alt=''/>
+            <div class='card-body'>
+            <h5 class='card-title text-center'>${match.description}</h5>
+            <span class='card-text'><s>${match.oldprice} </s></span>
+            <h4 class='card-text'> ${match.price}</h4>
+            <a href='#' class='btn btn-info text-center'>Adauga in cos</a>
+            </div>
+            </div>`
+            row.appendChild(card);
+        });
+        matchList.appendChild(row)
     }
+
 };
 search.addEventListener('input', () => searchClothers(search.value));
