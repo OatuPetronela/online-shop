@@ -28,9 +28,9 @@ document.getElementById("myNav").innerHTML =
     "<a class='nav-link text-dark' href='/pages/contact.html '>CONTACT</a>" +
     "</li>" +
     "</ul>" +
-    "<form action='http://127.0.0.1:5500/pages/header.html' class='d-flex'>" +
+    "<form action='/pages/search-result.html' class='d-flex' onsubmit='return false'>" +
     "<input class='form-control me-2' type='text' id='search' placeholder='Cauta produsele favorite' aria-label='Search'>" +
-    "<button class='btn btn-outline-light mr-3'  type='submit '>Search</button>" +
+    "<button class='btn btn-outline-light mr-3' onClick='myfunct()' type='submit '>Search</button>" +
     "</form>" +
     "</div>" +
     "</nav>";
@@ -61,10 +61,14 @@ document.getElementById("myFooter").innerHTML =
     "<div class='text-center p-3' style='background-color: rgba(0, 0, 0, 0.2);'>© " + new Date().getFullYear() + " Copyright:</div>" +
     "</footer>";
 
-const search = document.getElementById('search');
-var matchList = document.getElementById('match-list');
+function myfunct() {
+    $('form').attr('action', 'new path');
+}
 
-//cauta si filtreaza hainele
+const search = document.getElementById('search');
+var list = document.getElementById('match-list');
+
+// cauta si filtreaza hainele
 
 
 const searchClothers = async searchText => {
@@ -72,36 +76,38 @@ const searchClothers = async searchText => {
     const clothers = await res.json();
 
 
-    let matches = clothers.filter(clother => {
+    let filterClothers = clothers.filter(clother => {
         const cloth = new RegExp(`^${searchText}`, 'gi');
         return clother.description.match(cloth);
     });
     if (searchText.length === 0) {
-        matches = [];
+        filterClothers = [];
     } else {
-        outputHtml(matches)
+        outputHtml(filterClothers)
     }
 };
-const outputHtml = matches => {
+console.log(searchClothers.length);
+var outputHtml = filterClothers => {
     let row = document.createElement('div');
     row.className = "row";
-    if (matches.length > 0) {
-        matches.map(match => {
+    if (filterClothers.length > 0) {
+        filterClothers.map(cloth => {
             let card = document.createElement("div");
             card.className = "col-md-2"
             card.innerHTML = `<div class='card mt-2'> 
-            <img src="${match.image}" class='card-img-top' id='image_search' alt=''/>
+            <img src="${cloth.image}" class='card-img-top' id='image_search' alt=''/>
             <div class='card-body'>
-            <h5 class='card-title text-center'>${match.description}</h5>
-            <span class='card-text'><s>${match.oldprice} </s></span>
-            <h4 class='card-text'> ${match.price}</h4>
+            <h5 class='card-title text-center'>${cloth.description}</h5>
+            <span class='card-text'><s>${cloth.oldprice} </s></span>
+            <h4 class='card-text'> ${cloth.price}</h4>
             <a href='#' class='btn btn-info text-center'>Adauga in cos</a>
             </div>
             </div>`
             row.appendChild(card);
         });
-        matchList.appendChild(row)
+        list.appendChild(row)
     }
-
 };
+
+
 search.addEventListener('input', () => searchClothers(search.value));

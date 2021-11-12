@@ -14,52 +14,70 @@
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <nav id="myNav"></nav>
+    <!-- Navbar -->
+    <header>
+        <nav id="myNav"></nav>
+        <!-- Articole -->
+        <div class="filter-box">
+            <a href="#" role="button" class="btn btn-outline-warning active" data-fiilter="all">Toata imbracamintea</a>
+            <a href="#" class="btn btn-outline-warning" data-fiilter="plovere">Plovere</a>
+            <a href="#" class="btn btn-outline-warning" data-fiilter="cardigane/jachete">Cardigane/Jachete</a>
+            <a href="#" class="btn btn-outline-warning" data-fiilter="rochii">Rochii</a>
+        </div>
+    </header>
     <div id='match-list'>
         <div id="articles"></div>
-
+        <!-- Footer -->
         <footer id="myFooter"></footer>
 
         <script src="/script/index.js"></script>
         <script src="/script/addjson.js"></script>
 
-        <script type="text/javascript">
-            fetch('../assets/imbracamintefemei.json')
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(data) {
-                    var articles = document.getElementById('articles')
-
-                    var row = document.createElement('div');
-                    row.className = "row";
-
-                    for (var i = 0; i < data.length; i++) {
-                        var card = document.createElement('div');
-                        card.className = "col-sm-6 col-md-4 col-lg-3";
-                        card.innerHTML =
-                            "<div class='card mt-2'>" +
-                            "<img src=" + data[i]['image'] + " class='card-img-top' id='img' alt='...'/>" +
-                            "<div class='card-body'>" +
-                            "<h5 class='card-title text-center'>" + data[i].description + "</h5>" +
-                            "<span class='card-text'><s>" + data[i].oldprice + "</s></span>" +
-                            "<h4 class='card-text'>" + data[i].price + "</h4>" +
-                            "<a href='#' class='btn btn-info text-center'>Adauga in cos</a>" +
-                            "</div>" +
-                            "</div>";
-
-                        row.appendChild(card)
-                    }
-
-                    articles.appendChild(row);
-                })
-
-            .catch(function(err) {
-                return err + 'Null';
-                console.log(err);
-            });
-        </script>
-
 </body>
 
 </html>
+
+<script type="text/javascript">
+    //conect JSON
+    fetch('../assets/imbracamintefemei.json')
+        .then(function(response) {
+            return response.json();
+        })
+        //Add each product from json to a card
+        .then(function(data) {
+            var articles = document.getElementById('articles')
+
+            var row = document.createElement('div');
+            row.className = "row";
+
+            for (var i = 0; i < data.length; i++) {
+                var card = document.createElement('div');
+                card.className = "col-sm-6 col-md-4 col-lg-3" + " id=" + data[i]['id'] + " ";
+                card.innerHTML =
+                    "<div class='card mt-2' >" +
+                    "<img src=" + data[i]['image'] + " class='card-img-top' id='img' alt='...'/>" +
+                    "<div class='card-body'>" +
+                    "<h5 class='card-title text-center'>" + data[i].description + "</h5>" +
+                    "<span class='card-text'><s>" + data[i].oldprice + "</s></span>" +
+                    "<h4 class='card-text'>" + data[i].price + "</h4>" +
+                    "<a href=" + `/pages/clotherid.html?id=${data[i]['id']}` + " class='btn btn-info text-center'>Adauga in cos</a>" +
+                    "</div>" +
+                    "</div>";
+                // var clother = data[i]['id']; // de continuat 
+
+                row.appendChild(card)
+            }
+
+            articles.appendChild(row);
+        })
+
+    .catch(function(err) {
+        return err + 'Null';
+        console.log(err);
+    });
+</script>
+<!-- <script>
+    const btns = document.querySelectorAll(".btn");
+    let json = require('../assets/imbracamintefemei.json');
+    console.log(json);
+</script> -->
