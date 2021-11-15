@@ -9,13 +9,13 @@ document.getElementById("myNav").innerHTML =
     "<li class='nav-item dropdown'>" +
     "<a class='nav-link dropdown-toggle text-dark' href='/pages/femei.html' id='avbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>FEMEI</a>" +
     "<ul class='dropdown-menu' aria-labelledby='navbarDropdown'>" +
-    "<li><a class='dropdown-item' href='/pages/imbracaminte.html'>IMBRACAMINTE</a></li>" +
+    "<li><a class='dropdown-item' href='/pages/imbracamintedama.html'>IMBRACAMINTE</a></li>" +
     "<li><a class='dropdown-item' href='#'>INCALTAMINTE</a></li>" +
     "</ul>" +
     "<li class='nav-item dropdown'>" +
     "<a class='nav-link dropdown-toggle text-dark' href='/pages/femei.html' id='avbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>BARBATI</a>" +
     "<ul class='dropdown-menu' aria-labelledby='navbarDropdown'>" +
-    "<li><a class='dropdown-item' href='#'>IMBRACAMINTE</a></li>" +
+    "<li><a class='dropdown-item' href='/pages/imbracamintebarbati.html'>IMBRACAMINTE</a></li>" +
     "<li><a class='dropdown-item' href='#'>INCALTAMINTE</a></li>" +
     "</ul>" +
     "<li class='nav-item dropdown'>" +
@@ -72,7 +72,7 @@ var list = document.getElementById('match-list');
 
 
 const searchClothers = async searchText => {
-    const res = await fetch('../assets/imbracamintefemei.json');
+    const res = await fetch('../assets/imbracamintebarbati.json', );
     const clothers = await res.json();
 
 

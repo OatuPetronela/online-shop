@@ -1,0 +1,141 @@
+[{
+        "id": 1,
+        "description": "Bluza simpla cu maneca lunga , bleumarin",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1244972/1244972-6183438f8596a-1_mare.jpg",
+        "oldprice": "165,00 lei",
+        "price": "55,00 lei"
+    }, {
+        "id": 2,
+        "description": "Bluza barbati, negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242188/1242188-616856624cc05-1_mare.jpg",
+        "oldprice": "190,00 lei",
+        "price": "86,00 lei"
+    },
+    {
+        "id": 3,
+        "description": "Bluza simpla cu maneca lunga, verde",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1192154/1192154-6077957ce7853-1_mare.jpg",
+        "oldprice": "165,00 lei",
+        "price": "55,00 lei"
+    },
+    {
+        "id": 4,
+        "description": "Cardigan barbati, negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242343/1242343-616a293311338-1_mare.jpg",
+        "oldprice": "209,00 lei",
+        "price": "105,00 lei"
+    },
+    {
+        "id": 5,
+        "description": "Hanorac barbati, albastru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1188341/1188341-60618dfb3b776-1_mare.jpg",
+        "oldprice": "190,00 lei",
+        "price": "65,00 lei"
+    },
+    {
+        "id": 6,
+        "description": "Hanorac barbati, mustar",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1194559/1194559-60830d518d6d5-1_mare.jpg",
+        "oldprice": "259,00 lei",
+        "price": "107,00 lei"
+    },
+    {
+        "id": 7,
+        "description": "Hanorac barbati, menta",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1173298/1173298-6031c5cd40da4-1_mare.jpg",
+        "oldprice": "211,00 lei",
+        "price": "99,00 lei"
+    },
+    {
+        "id": 8,
+        "description": "Hanorac barbati,negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1251763/1251763-6189db16e5992-1_mare.jpg",
+        "oldprice": "259,00 lei",
+        "price": "129,00 lei"
+    },
+
+    {
+        "id": 9,
+        "description": "Jacheta din piele ecologic, neagra",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1187315/1187315-605bf8eab0f73-1_mare.jpg",
+        "oldprice": "404,00 lei",
+        "price": "320,00 lei"
+    }, {
+        "id": 10,
+        "description": "Hanorac barbati,verde",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242194/1242194-61685676db311-1_mare.jpg",
+        "oldprice": "231,00 lei",
+        "price": "139,00 lei"
+    },
+    {
+        "id": 11,
+        "description": "Hanorac barbati, gri",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1243456/1243456-6177581eab3a0-1_mare.jpg",
+        "oldprice": "264,00 lei",
+        "price": "107,00 lei"
+    },
+    {
+        "id": 12,
+        "description": "Bluza barbati, verde",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242184/1242184-61685651a7882-1_mare.jpg",
+        "oldprice": "925,00 lei",
+        "price": "359,00 lei"
+    },
+    {
+        "id": 13,
+        "description": "Geaca barbati, bleumarin",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1252436/1252436-618c7e04f3172-1_mare.jpg",
+        "oldprice": "305,00 lei",
+        "price": "155,00 lei"
+    },
+    {
+        "id": 14,
+        "description": "Pulover barbati, negru",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242858/1242858-6170c0a7d5073-1_mare.jpg",
+        "oldprice": "385,00 lei",
+        "price": "190,00 lei"
+    },
+    {
+        "id": 15,
+        "description": "Bluza barbati,rosu",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242186/1242186-61685659c37a4-1_mare.jpg",
+        "oldprice": "329,00 lei",
+        "price": "107,00 lei"
+    },
+    {
+        "id": 16,
+        "description": "Hanorac barbati, rosu",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1194590/1194590-60830ddb4c2a3-1_mare.jpg",
+        "oldprice": "249,00 lei",
+        "price": "189,00 lei"
+    },
+    {
+        "id": 17,
+        "description": "Bluza barbati, bleumarin",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1188216/1188216-60618b8e45b77-1_mare.jpg",
+        "oldprice": "209,00 lei",
+        "price": "89,00 lei"
+    },
+    {
+        "id": 18,
+        "description": "Tricou barbati, bleumarin",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1190655/1190655-606facede6c99-1_mare.jpg",
+        "oldprice": "109,00 lei",
+        "price": "77,00 lei"
+    },
+    {
+        "id": 19,
+        "description": "Tricou barbati, alb",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1187238/1187238-605bf77f83f33-1_mare.jpg",
+        "oldprice": "201,00 lei",
+        "price": "123,00 lei"
+    },
+    {
+        "id": 20,
+        "description": "Pulover barbati, bej",
+        "image": "https://static.fashionup.ro/static/imagini/produse/thumbs/p2/676/6459/1242856/1242856-6170c09e29fee-1_mare.jpg",
+        "oldprice": "199,00 lei",
+        "price": "159,00 lei"
+    }
+
+]

@@ -18,12 +18,6 @@
     <header>
         <nav id="myNav"></nav>
         <!-- Articole -->
-        <div class="filter-box">
-            <a href="#" role="button" class="btn btn-outline-warning active" data-fiilter="all">Toata imbracamintea</a>
-            <a href="#" class="btn btn-outline-warning" data-fiilter="plovere">Plovere</a>
-            <a href="#" class="btn btn-outline-warning" data-fiilter="cardigane/jachete">Cardigane/Jachete</a>
-            <a href="#" class="btn btn-outline-warning" data-fiilter="rochii">Rochii</a>
-        </div>
     </header>
     <div id='match-list'>
         <div id="articles"></div>
@@ -31,15 +25,12 @@
         <footer id="myFooter"></footer>
 
         <script src="/script/index.js"></script>
-        <script src="/script/addjson.js"></script>
-
 </body>
-
-</html>
+<html>
 
 <script type="text/javascript">
     //conect JSON
-    fetch('../assets/imbracamintefemei.json')
+    fetch('../assets/imbracamintebarbati.json')
         .then(function(response) {
             return response.json();
         })
@@ -60,7 +51,7 @@
                     "<h5 class='card-title text-center'>" + data[i].description + "</h5>" +
                     "<span class='card-text'><s>" + data[i].oldprice + "</s></span>" +
                     "<h4 class='card-text'>" + data[i].price + "</h4>" +
-                    "<a href=" + `/pages/clotherid.html?id=${data[i]['id']}` + " class='btn btn-info text-center'>Adauga in cos</a>" +
+                    "<a href=" + `/pages/clotherid.html?id=${data[i]['id']}` + "  class='btn btn-info text-center'>Adauga in cos</a>" +
                     "</div>" +
                     "</div>";
                 // var clother = data[i]['id']; // de continuat 
@@ -76,8 +67,5 @@
         console.log(err);
     });
 </script>
-<!-- <script>
-    const btns = document.querySelectorAll(".btn");
-    let json = require('../assets/imbracamintefemei.json');
-    console.log(json);
-</script> -->
+<script>
+</script>
