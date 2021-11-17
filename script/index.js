@@ -28,7 +28,7 @@ document.getElementById("myNav").innerHTML =
     "<a class='nav-link text-dark' href='/pages/contact.html '>CONTACT</a>" +
     "</li>" +
     "</ul>" +
-    "<form action='/pages/search-result.html' class='d-flex' onsubmit='return false'>" +
+    "<form action='' class='d-flex'>" +
     "<input class='form-control me-2' type='text' id='search' placeholder='Cauta produsele favorite' aria-label='Search'>" +
     "<button class='btn btn-outline-light mr-3' onClick='myfunct()' type='submit '>Search</button>" +
     "</form>" +
@@ -61,40 +61,43 @@ document.getElementById("myFooter").innerHTML =
     "<div class='text-center p-3' style='background-color: rgba(0, 0, 0, 0.2);'>© " + new Date().getFullYear() + " Copyright:</div>" +
     "</footer>";
 
+// function myfunct() {
+//     $('form').attr('action', 'new path');
+// }
 function myfunct() {
-    $('form').attr('action', 'new path');
-}
-
-const search = document.getElementById('search');
-var list = document.getElementById('match-list');
-
-// cauta si filtreaza hainele
+    window.open("http://127.0.0.1:5500/pages/search-result.html", "_blank");
 
 
-const searchClothers = async searchText => {
-    const res = await fetch('../assets/imbracamintebarbati.json', );
-    const clothers = await res.json();
+    const search = document.getElementById('search');
+    var list = document.getElementById('match-list');
+
+    // cauta si filtreaza hainele
 
 
-    let filterClothers = clothers.filter(clother => {
-        const cloth = new RegExp(`^${searchText}`, 'gi');
-        return clother.description.match(cloth);
-    });
-    if (searchText.length === 0) {
-        filterClothers = [];
-    } else {
-        outputHtml(filterClothers)
-    }
-};
-console.log(searchClothers.length);
-var outputHtml = filterClothers => {
-    let row = document.createElement('div');
-    row.className = "row";
-    if (filterClothers.length > 0) {
-        filterClothers.map(cloth => {
-            let card = document.createElement("div");
-            card.className = "col-md-2"
-            card.innerHTML = `<div class='card mt-2'> 
+    const searchClothers = async searchText => {
+        const res = await fetch('../assets/imbracamintefemei.json', );
+        const clothers = await res.json();
+
+
+        let filterClothers = clothers.filter(clother => {
+            const cloth = new RegExp(`^${searchText}`, 'gi');
+            return clother.description.match(cloth);
+        });
+        if (searchText.length === 0) {
+            filterClothers = [];
+        } else {
+            outputHtml(filterClothers)
+        }
+    };
+    console.log(searchClothers.length);
+    var outputHtml = filterClothers => {
+        let row = document.createElement('div');
+        row.className = "row";
+        if (filterClothers.length > 0) {
+            filterClothers.map(cloth => {
+                let card = document.createElement("div");
+                card.className = "col-md-2"
+                card.innerHTML = `<div class='card mt-2'> 
             <img src="${cloth.image}" class='card-img-top' id='image_search' alt=''/>
             <div class='card-body'>
             <h5 class='card-title text-center'>${cloth.description}</h5>
@@ -103,11 +106,11 @@ var outputHtml = filterClothers => {
             <a href='#' class='btn btn-info text-center'>Adauga in cos</a>
             </div>
             </div>`
-            row.appendChild(card);
-        });
-        list.appendChild(row)
-    }
-};
+                row.appendChild(card);
+            });
+            list.appendChild(row)
+        }
+    };
 
-
+}
 search.addEventListener('input', () => searchClothers(search.value));
